@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<title>Covid-19 HelpBot</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('Images/Corona.jpg');
+  min-height: 100%;
+}
+</style>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#HelpBot" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">HelpBot</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Covid-19 HelpBot</b></h1>
+    <p>Clear all your questions about the Coronavirus disease</p>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-grey">About</h2>
+    <hr class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="Images/pic1.jpg" style="width:100%">
+        <img src="Images/pic3.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="Images/pi2.jpg" style="width:100%">
+        <img src="Images/pic4.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About</h2>
+    <hr class="w3-opacity">
+    <p>Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus.<br>
+
+      Most people infected with the virus will experience mild to moderate respiratory illness and recover without requiring special treatment. However, some will become seriously ill and require medical attention. Older people and those with underlying medical conditions like cardiovascular disease, diabetes, chronic respiratory disease, or cancer are more likely to develop serious illness. Anyone can get sick with COVID-19 and become seriously ill or die at any age.<br> 
+      
+      The best way to prevent and slow down transmission is to be well informed about the disease and how the virus spreads. Protect yourself and others from infection by staying at least 1 metre apart from others, wearing a properly fitted mask, and washing your hands or using an alcohol-based rub frequently. Get vaccinated when it’s your turn and follow local guidance.<br>
+      
+      The virus can spread from an infected person’s mouth or nose in small liquid particles when they cough, sneeze, speak, sing or breathe. These particles range from larger respiratory droplets to smaller aerosols. It is important to practice respiratory etiquette, for example by coughing into a flexed elbow, and to stay home and self-isolate until you recover if you feel unwell.<br>
+    </p>
+  </div>
+
+      <!-- End About Section -->
+      <!-- HelpBot Section -->
+    <div id="HelpBot">
+    <h3 class="w3-padding-16">HelpBot</h3>
+    
+
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+      <iframe src='https://webchat.botframework.com/embed/Covid-19_Helpbot?s=JIK5GnAos9k.VP5p14TNgbavRGaiOWMdFoNJiTBBL-bJ-PCU5Wp0aLM'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
+    </div>
+
+    </div>
+    
+    
+      
+    
+  <!-- End HelpBot Section -->
+  
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i><br> Phone: S. No Name of the State Helpline Nos.
+        <br>
+        1 Andhra Pradesh 0866-2410978
+        <br>
+        2 Arunachal Pradesh 9436055743
+        <br>
+        3 Assam 6913347770
+        <br>
+        4 Bihar 104
+        <br>
+        5 Chhattisgarh 104
+        <br>
+        6 Goa 104
+        <br>
+        7 Gujarat 104
+        <br>
+        8 Haryana 8558893911
+        <br>
+        9 Himachal Pradesh 104
+        <br>
+        10 Jharkhand 104
+        <br>
+        11 Karnataka 104
+        <br>
+        12 Kerala 0471-2552056
+        <br>
+        13 Madhya Pradesh 104
+        <br>
+        14 Maharashtra 020-26127394
+        <br>
+        15 Manipur 3852411668      <br>
+        16 Meghalaya 108      <br>
+        17 Mizoram 102      <br>
+        18 Nagaland 7005539653      <br>
+        19 Odisha 9439994859      <br>
+        20 Punjab 104      <br>
+        21 Rajasthan 0141-2225624      <br>
+        22 Sikkim 104      <br>
+        23 Tamil Nadu 044-29510500      <br>
+        24 Telangana 104      <br>
+        25 Tripura 0381-2315879      <br>
+        26 Uttarakhand 104      <br>
+        27 Uttar Pradesh 18001805145      <br>
+        28 West Bengal 1800313444222, 03323412600   
+        <br>
+        S. No Name of Union Territory (UT) Helpline Nos.
+        <br>
+        1 Andaman and Nicobar Islands 03192-232102
+        <br>
+        2 Chandigarh 9779558282
+        <br>
+        3 Dadra and Nagar Haveli and Daman & Diu 104
+        <br>
+        4 Delhi 011-22307145 <br>
+        5 Jammu & Kashmir 01912520982, 0194-2440283 <br>
+        6 Ladakh 01982256462 <br>
+        7 Lakshadweep 104 <br>
+        8 Puducherry 104 <br></p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>Send Email: <a href="mailto:technicalquery.covid19@gov.in">technicalquery.covid19@gov.in</a> </p>
+    </div>
+  <!-- End Contact Section -->
+  </div>  
+  
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
